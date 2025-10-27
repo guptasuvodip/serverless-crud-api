@@ -1,0 +1,15 @@
+Common Issues
+1. "Invalid request type" error
+
+Cause: Lambda Proxy Integration not enabled in API Gateway
+Solution: Enable "Use Lambda Proxy integration" in API Gateway integration settings
+
+2. Missing httpMethod in event
+
+Cause: Testing directly in Lambda console without proper event structure
+Solution: Use API Gateway or create test event with proper structure
+
+3. DynamoDB access denied
+
+Cause: Lambda execution role lacks DynamoDB permissions
+Solution: Add DynamoDB permissions to Lambda IAM role
